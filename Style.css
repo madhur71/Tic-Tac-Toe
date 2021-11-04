@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-width: 6px;
+}
+.all{
+    width: 100%;
+    height: 100%;
+    background-image: url('src/Background.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.infor{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    color: white;
+    color: black;
+
+}
+.intro{
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+   
+    border-radius: 50px ;
+    padding: 50px;
+}
+#Player_1,#Player_2{
+    height: 68px;
+    width: 100%;
+    box-shadow: inset 6px 6px 13px #fff , inset 6px 6px 13px rgba(0, 0, 0, 16)  ;
+    background-color: #ecf0f3;
+    border: none;
+    border-radius: 32px;
+    color: rgb(26, 25, 25);
+    text-align: center;
+    margin: 40px 0px 30px 0px;
+    padding: 20px;
+    font-size: 40px;
+}
+.star{
+    grid-column-start: 1;
+  grid-column-end: 3;
+width: 100%;
+height: fit-content;
+font-size: 40px;
+background-color:  #ecf0f3;
+border-radius: 60px;
+padding: 15px 25px;
+box-shadow: 6px 6px 13px #fff , 6px 6px 13px rgba(0, 0, 0, 16)  ;
+color: #010f18;
+font-weight: bolder;
+}
+.star:hover{
+    box-shadow: inset 6px 6px 13px #fff , inset 6px 6px 13px rgba(0, 0, 0, 16)  ;
+
+}
+.container{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.board{
+    box-shadow: 6px 6px 13px #fff ,  6px 6px 13px rgba(0, 0, 0, 16)  ;
+    border-radius: 28px;
+    background: #a4c4d3  ;
+    padding: 30px 45px 30px 30px;
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+}
+.itm{
+    border-color:#a4c4d3; 
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px  ;
+}
+button{
+    height: 100px;
+    width: 100px;
+    border: none;
+    
+}
+.anim:hover{
+   background: white;
+}
+#resul{
+    grid-column-start: 1;
+  grid-column-end: 4;
+  font-size: 50px;
+  text-align: center;
+}
+
+#one{
+    border-top-color: #a4c4d3 ;
+    border-left-color: #a4c4d3 ;
+}
+#two,#three{
+    border-top-color: #a4c4d3 ;
+    border-right-color: #a4c4d3;
+}
+#six,#nine{
+    border-right-color: #a4c4d3;
+}
+#four,#seven{
+    border-left-color: #a4c4d3;
+}

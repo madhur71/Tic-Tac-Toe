@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="all">   
+
+        <div class="infor" > LET'S PLAY TIC TAC TOE </div>
+        <div class="Infor">
+            <span id="target">   
+                <div class="intro">
+                    <input type="text" id="Player_1" placeholder="Player 1">
+                <input type="text" id="Player_2" placeholder="Player 2"><br>
+                <button class="star" onclick="StartGame('target', 'replace_target')">Start</button> 
+                </div>
+            </span>
+        </div>
+        
+        <div class="container" style="display: none;">
+            <span id="replace_target">      
+                <div class="board">
+                    <div class="itm" id="one" style="border-style: solid solid none  solid ;"> <button class="anim" onclick="change('one')"  > </button> </div>
+                    <div class="itm" id="two"  style="border-style: solid solid none solid ;"> <button class="anim" onclick="change('two')"  > </button> </div>
+                    <div class="itm" id="three"style="border-style: solid solid none solid ;"> <button class="anim" onclick="change('three')"> </button> </div>
+                    <div class="itm" id="four" style="border-style: solid solid none solid ;"> <button class="anim" onclick="change('four')" > </button> </div>
+                    <div class="itm" id="five" style="border-style: solid solid none solid ;"> <button class="anim" onclick="change('five')" > </button> </div>
+                    <div class="itm" id="six"  style="border-style: solid solid none solid ;"> <button class="anim" onclick="change('six')"  > </button> </div>
+                    <div class="itm" id="seven"style="border-style: solid solid none solid ;"> <button class="anim" onclick="change('seven')"> </button> </div>
+                    <div class="itm" id="eignt"style="border-style: solid solid none solid ;"> <button class="anim" onclick="change('eignt')"> </button> </div>
+                    <div class="itm" id="nine" style="border-style: solid solid none solid ;"> <button class="anim" onclick="change('nine')" > </button> </div>
+                    <div id="resul"> </div>
+                </div>
+                
+            </span>
+            
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
